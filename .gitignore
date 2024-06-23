@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# FastAPI specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+*.mochawesome.json
+
+# Translations
+*.mo
+
+# Static files
+static/
+staticfiles/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Environments
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Custom ignore files
+/mobiles.db
+/db.sqlite3

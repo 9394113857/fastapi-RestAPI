@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import mysql.connector
+import os  # Import the os module for environment variables
 
 app = FastAPI()
 
@@ -60,10 +61,25 @@ def delete_mobile_mysql(id: int):
 
 if __name__ == '__main__':
     import uvicorn
-    # uvicorn.run(app, host="0.0.0.0", port=5000)  # You can change the host and port here
-    uvicorn.run(app, port=5000)
 
-    # uvicorn main:app --host 0.0.0.0 --port ${PORT:-5000}
-    # This command uses the ${PORT:-5000} syntax, 
-    # which means it will use the value of the PORT environment variable if it's set, 
-    # otherwise it will default to 5000.
+    # Get the port from the environment variable or use the default (5000)
+    port = int(os.environ.get("PORT", 5000))
+
+    # Run the app with the specified port
+    uvicorn.run(app, port=port)
+
+
+# Now, you can run your FastAPI application. Use the following command:
+
+# python main.py
+
+# This will start your FastAPI application, and it will be accessible at http://localhost:5000 by default. 
+
+# If you want to run it on a custom port, you can set the PORT environment variable. For example, to run on port 8000:
+# PORT=8000 python main.py
+
+# python main.py // Use this main command if you want default port 5000
+
+# Here MySQL host is used
+
+# Adjust the port number as needed.
