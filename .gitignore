@@ -63,6 +63,9 @@ staticfiles/
 .env
 .env.*
 
+# Virtual environment
+flask-project-env/
+
 # macOS
 .DS_Store
 
