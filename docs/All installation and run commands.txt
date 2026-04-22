@@ -1,6 +1,8 @@
 py -m venv venv
 .\venv\Scripts\activate
 
+python.exe -m pip install --upgrade pip
+
 # Installs the required Python packages listed in the 'requirements.txt' file.
 pip install -r .\requirements.txt
 
