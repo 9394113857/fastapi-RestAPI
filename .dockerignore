@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# Env files
+.env
+
+# Git
+.git
+.gitignore
+
+# Local DB
+sqlite_db.db
+
+# Node (if any frontend inside)
+node_modules/
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,38 @@
+pip install -r requirements.txt
+
+# pip install sqlalchemy
+# pip install fastapi uvicorn sqlalchemy
+
+pip freeze > requirements.txt
+
+uvicorn app.main:app --reload 
+
+deactivate
+
+taskkill /F /IM python.exe
+
+Remove-Item -Recurse -Force venv
+
+python -m venv venv
+pip install -r requirements.txt
+python.exe -m pip install --upgrade pip
+
+# Run FastAPI
+uvicorn app.main:app --reload
+
+Invoke-RestMethod -Method POST http://127.0.0.1:8000/mobiles `
+>> -ContentType "application/json" `
+>> -Body '{"name":"Samsung","price":50000,"ram":"8GB","storage":"128GB"}'
+
+message
+-------
+created
+
+
+http://127.0.0.1:8000/mobiles
+
+
+
+
+
+
