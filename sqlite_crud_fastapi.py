@@ -181,3 +181,6 @@ if __name__ == "__main__":
 
 # http://localhost:5000
 
+# To run on port 5000, you can use:
+# uvicorn sqlite_crud_fastapi:app --reload --host 0.0.0.0 --port 5000
+
