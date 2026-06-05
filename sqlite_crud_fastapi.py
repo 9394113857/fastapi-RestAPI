@@ -153,3 +153,31 @@ if __name__ == "__main__":
 # ✅ Run only:-
 # py sqlite_crud_fastapi.py
 
+# The default port for FastAPI (Uvicorn) is:
+# 8000, but we have set it to 5000 in the code for consistency with Render's default port.
+
+# The default port for FastAPI (Uvicorn) is:
+
+# 8000
+
+# If you run:
+
+# uvicorn main:app --reload
+
+# you'll see:
+
+# Uvicorn running on http://127.0.0.1:8000
+
+# and access:
+
+# http://localhost:8000
+# http://localhost:8000/docs
+
+# In your code, however, you have:
+
+# port = int(os.environ.get("PORT", 5000))
+
+# So if no PORT environment variable is set, your app runs on:
+
+# http://localhost:5000
+
